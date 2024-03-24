@@ -1,4 +1,4 @@
-package com.example.leetcode;
+package com.example.leetcode.listNode;
 
 import java.util.Arrays;
 
@@ -32,12 +32,12 @@ public class SortList {
             head = head.next;
         }
         Arrays.sort(array);
-        ListNode newNodeHead  = new ListNode(0);
+        ListNode newNodeHead = new ListNode(0);
         ListNode cur = newNodeHead;
         for (int i = 0; i < array.length; i++) {
             int value = array[i];
             cur.next = new ListNode(value);
-            cur= cur.next;
+            cur = cur.next;
         }
         return newNodeHead;
     }
